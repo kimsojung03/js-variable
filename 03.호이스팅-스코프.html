@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호이스팅 - 스코프</title>
+</head>
+<body>
+    <script>
+        /*호이스팅 : 코드를 실행하기 전에, 일종의 고드평가를 거침,
+          이때, 변수 선언문을 미리 실행해두기 때문에, 뒤에서 선언한 변수도 
+          앞의 코드에서 사용할 수 있게되는데 이걸 변수 호이스팅 이라한다.*/
+
+          // var num; 예시
+
+        // console.log(num);  // undefined 출력 (정의되지 않은 값이라는뜻)
+
+        // var num = 40;  //40이라는 숫자를 대입해라 
+
+
+        //  ==(자바스크립트에서는 같다라는뜻) 이퀄두개
+        //  = 이퀄 하나는 대입하다 라는뜻
+        // 변수의 호이스팅 문제로 의도하지 않은 값이 노출될 때가 종종 발생하였다
+        // 그래서 등장한 let , const !
+        
+        // let , const : 코드 실행전에 변수 선언만 해두고, 초기화는 실행과정에서 변수 선언문을 만났을 때 함.
+        // 호이스팅이 발생하기는 하지만, 호이스팅 과정이 엄연히 다르다.
+        // 뒤에 선언값을 앞의 코드에서 사용하지 못함.
+
+        var int = 0;  // 변수 선언과 동시에 초기화
+        console.log(int);
+
+        var int = 2;  //변수를 재 선언 동일한값의 변수를 재선언
+        console.log(int);
+        
+        int = 4; // 재 할당
+        console.log(int);
+
+        let num = 10;
+        console.log(num);
+
+        // let num = 20;
+        // console.log(num);
+        // let은 재 선언이 안된다.
+        //(변하는값 let를 쓴다)
+        
+        num = 40;
+        console.log(num);
+        //재 선언은 안되지만 재 할당은 가능하다.
+
+        // const STR = '첫번째 선언'; 상수변수 입력 (대문자)
+        // console.log(STR);
+
+        // const STR = '두번째 선언'; 
+        // console.log(STR);
+        // const 재 선언 불가
+
+        STR = '세번째 선언';
+        console.log(STR);
+        //상수 선언시 사용 대문자 (변하지 않는값 const를 쓴다)
+        //const 재 할당 불가.
+
+
+        //스코프 얘기 나중에 if문 배운뒤 하기
+    </script>
+</body>
+</html>
