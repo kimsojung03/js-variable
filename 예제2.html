@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- //------------------삼항연산자--------------------//
+
+        // let a = parseInt(prompt('당신의 나이는?'));  //숫자로 반환받게 됨.
+        // let b = 30;
+
+        // let result = a > b ? "음..나이 때문에 고민이 많으시겠군요" : "오 아직 젊으시군요";
+        // console.log(result);
+        // //물음표 앞의 식이 참일때 앞의문장을 실행, 거짓이면 두번째 문장을 실행
+
+        // let result1 = a > b ? alert('너무 걱정 마세요...') : alert('젊으시군요');
+        // console.log(result1);
+
+        // let result2 = age > setAga ? alert('걱정마라우!') : alert('아직 한창이구만!');
+        // console.log(result2);
+
+        // 삼항연산자 연습
+        // BMI (적정몸무게 구하기), 구하는 공식 BMI = (키 -100)* 0.9
+        // 유저에게 키와 몸무게를 입력받아 유저의 몸무게가 적정몸무게 보다 이상일 경우
+        // '살 좀 빼세요...' 알림창 띄우기
+        // 미만일 경우 '살 좀 찌세요..' 라고 알림창 띄우기
+        // 묵시적 타입변환: 자바스크립트는 특정 타입의 값을 기대하는곳에
+        // 다른 타입의 값이 들어오면 자동으로 타입을 변환해서 사용함.
+
+
+        let height =parseInt (prompt('당신의 키를 적어주세요'));
+        let weight =parseInt (prompt('당신의 몸무게를 적어주세요'));
+
+        let bmi =((height-100) * 0.9);
+        
+        let result4 = bmi <weight ? alert('살 좀 뺴세용..') : alert('살 좀 찌세용..')
+        console.log(result4);
+
+
+
+    </script> -->
+
+
+    <script>
+        //score를 유저로부터 입력받고,
+        //90 이상일 떄는 A등급을,
+        //90미만 80 이상일때는 B등급을,
+        //80미만 70 이상일때는 C등급을,
+        //70미만 60 이상일떄는 D등급을,
+        //60미만인 경우는 F등급으로 알림창을 띄어주세요
+
+        const score = parseInt(prompt('당신의 점수는?'));
+        const grade = score >= 90
+            ? 'A' : score >= 80
+                ? 'B' : score >= 70
+                    ? 'C' : score >= 60
+                        ? 'D' : 'F';
+        alert(`너의 점수는 ${score}점 이고, 너의 등급은${grade}등급 이다.`);
+
+
+        //'apple', 'banana', 'cherry' 'mango' 4개의 과일을 담아두고
+        // 해당 순번을 입력하면 해당 과일이 알림창에 노출되게 해주세요.
+        // 1번 입력시 -> 내가 고른 과일은 banana 입니다. 알림
+
+        // 01. 배열 (Array)
+        // new 키워드 -> 생성자 함수.
+        // 생성자 함수를 통한 Array 선언.
+        // const car = new Array('kia','volvo', 'hyundai');
+
+        // // 리터럴 방식 = 기호를 생성하여 데이터 생성.
+        // const car = ['kia','volvo','hyundai'];
+        // // 배열의 아이템, 배열의 요소, array의 엘리먼트 라고도 부름. 기아,볼보가 
+        // console.log(car);
+        // // 0,1,2 순으로 들어가 있는것을 확인할 수 있음.
+        // length 라는 속성이 있는것을 볼수있음 배열의 길이임 (3) 나옴
+        // 몇개의 배열요소가 들어있는지 확인가능
+
+        // console.log(car.length);
+        // console.log(car[2]);
+        //순서로 조회하는것을 인덱싱이라고 한다.
+        // car에서 [대괄호 입력] 해서 2번째꺼가 뭔지 알려줄래? ='hyundai'
+
+
+        const num = prompt('0,1,2,3 중 번호를 입력하세요');
+        const fruit = ['apple','banana','cherry','mango']; //Arry는 []쓰면 생략가능
+        alert(`내가 고른 과일은 ${fruit[num]}`);
+        
+
+    </script>
+</body>
+</html>
