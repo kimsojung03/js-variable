@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while</title>
+</head>
+<body>
+    <script>
+
+        //----------------while 반복문-----------------------//
+        //i가 10보다 작거나 같은때까지 반복할꺼다
+
+        // let i = 0;
+        
+        // while(i <= 10){
+        //     document.write(`${i}<br>`);
+        //     i++;
+        // }
+
+        // 조건이 변화하지 않으면 무한 반복을 터트린다.
+        // 조건을 거짓(false)으로 만들 수 있는 내용이 반드시 문장안에 포함되어야함.
+        // 초기값 받고 -> 조건확인 -> 조건부합 ->반복문실행 ->조건확인  루트로 돈다
+
+
+        //1부터 20사이의 숫자중에 짝수만 10개 출력
+        //반복문사용
+
+        let A = 0;
+        let num = 1;
+
+        while(A <10){
+            if(num % 2 ===0 && num <= 20){
+                document.write(`${num}<br>`);
+            A++;
+            }
+            num++;
+            
+        }
+        //포문에서 많이 사용되는 루틴이다.
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인증번호</title>
+</head>
+<body>
+    
+    <script>
+        function getVaildNumber(){
+            let number;
+
+            while(true){
+                number = parseInt(prompt('1부터 10까지 중 숫자를 입력하세요'));
+
+            if(number >= 1 && number <= 10){
+                break;
+            }
+                else{
+                    alert('유효한 숫자가 아닙니다.');
+                }
+            }
+            
+            return number;
+            
+        }
+            let VaildNumber = getVaildNumber (); //언제 쓸지 모르니까 값을 담아둬야한다. 브레이크문으로 문장자체를 종료할수있다.
+
+            if(VaildNumber = getVaildNumber)
+            alert('인증되었습니다');
+        
+    </script>
+</body>
+</html>
